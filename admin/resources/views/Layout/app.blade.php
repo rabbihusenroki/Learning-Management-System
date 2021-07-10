@@ -16,7 +16,7 @@
 </head>
 <body class="fix-header fix-sidebar">
     
-    @include('layout.menu')
+    @include('Layout.menu')
     
     @yield('content')
     
@@ -35,7 +35,7 @@
     <script src="{{ asset('js/custom.min-2.js') }}"></script>
     <script src="{{ asset('js/datatables.min.js') }}"></script>
     <script src="{{ asset('js/datatables-select.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>

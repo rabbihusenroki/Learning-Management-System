@@ -7,9 +7,13 @@ use App\Models\VisitorModel;
 
 class VisitorController extends Controller
 {
-    function VisitorIndex(){
 
-        $VisitorData=json_decode(VisitorModel::orderBy('id','desc')->take(500)->get());
-        return view('visitor',['VisitorKey'=>$VisitorData]);
-    }
+   function VisitorIndex(){
+
+   $VisitorData =json_decode(VisitorModel::orderBy('id','desc')->take(500)->get()) ;
+     
+   return view('Visitor',['VisitorData'=> $VisitorData]);
+	
+}
+
 }

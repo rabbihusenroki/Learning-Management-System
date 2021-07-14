@@ -4,9 +4,11 @@
 
 <div class="container ">
 <div class="row justify-content-center d-flex mt-5 mb-5">
-
+<div id="toastrFa" class="toast d-none col-md-6" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000">
+	<div style="margin-bottom:5px;" class="alert alert-danger" role="alert" aria-live="assertive" aria-atomic="true"></div>
+</div>
 <div class="col-md-10 card">
-  <div class="row">
+  <div class="row">   
     <div style="height: 450px" class="col-md-6 p-3">
       <form  action=" "  class="m-5 loginForm">
         <div class="form-group">
@@ -59,11 +61,11 @@
                window.location.href="/";
            }
            else{
-               toastr.error('Login Fail ! Try Again');
+               $('#toastrFa').removeClass('d-none').toast('show').html("Login Fail ! Try Again");
            }
 
         }).catch(function (error) {
-            toastr.error('Login Fail ! Try Again');
+            $('#toastrFa').removeClass('d-none').toast('show').html("Login Fail ! Try Again");
         })
 
 

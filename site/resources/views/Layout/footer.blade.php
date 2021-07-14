@@ -10,9 +10,9 @@
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">ঠিকানা</h3>
                 <hr>
-                <p class="footer-text"><i class="fas fa-map-marker-alt"></i> শেখেরটেক ৮ মোহাম্মদপুর, ঢাকা </p>
-                <p class="footer-text"><i class="fas fa-phone"></i> ০১৭৮৫৩৮৮৯১৯ </p>
-                <p class="footer-text"><i class="fas fa-envelope"></i> Rabbil@Yahoo.com</p>
+                <p class="footer-text"><i class="fas fa-map-marker-alt"></i>ওসমানী আন্তর্জাতিক বিমানবন্দর, সিলেট  </p>
+                <p class="footer-text"><i class="fas fa-phone"></i> ০১৮৯৩৯০৪৬৮৬ </p>
+                <p class="footer-text"><i class="fas fa-envelope"></i>wp.dev.tahsin786@gmail.com</p>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">তথ্য </h3>
@@ -31,5 +31,5 @@
     </div>
 </div>
 <div class="container-fluid bg-dark text-white m-0 text-center p-3">
-    <p class="rights-text  my-2 ">সর্বস্বত্ব রাব্বিল হাসান দ্বারা সংরক্ষিত; ২০১৯-২০২০ </p>
+    <p class="rights-text  my-2 ">সর্বস্বত্ব রাব্বি হুসেন রকি দ্বারা সংরক্ষিত; ২০২১-২০২২ </p>
 </div>

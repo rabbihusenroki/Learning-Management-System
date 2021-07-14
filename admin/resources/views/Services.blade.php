@@ -8,11 +8,6 @@
 <div class="row">
 <div class="col-md-12 p-3">
 
-
-
-
-
-
 <button id="addNewBtnId" class="btn my-3 btn-sm btn-danger">Add New </button>
 
 <div id="toastrS" class="toast d-none" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000">
@@ -245,24 +240,24 @@ function ServiceDelete(deleteID) {
             if(response.status==200){
             if (response.data == 1) {
                 $('#deleteModal').modal('hide');
-               $('#toastrS').removeClass('d-none').toast('show').html("Delete Success");
+               $('#toastrS').removeClass('d-none').toast('show').html("Delete Success").appendTo('#toastrS');
                 getServicesData();
             } else {
                 $('#deleteModal').modal('hide');		
-				$('#toastrFa').removeClass('d-none').toast('show').html("Delete Failed");
+				$('#toastrFa').removeClass('d-none').toast('show').html("Delete Failed").appendTo('#toastrFa');
                 getServicesData();
             }
 
             }
             else{
              $('#deleteModal').modal('hide');
-             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong");
+             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong").appendTo('#toastrFa');
             }
 
         })
         .catch(function(error) {
              $('#deleteModal').modal('hide');
-             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong");
+             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong").appendTo('#toastrFa');
         });
 }
 
@@ -312,14 +307,14 @@ $('#serviceEditConfirmBtn').click(function() {
 function ServiceUpdate(serviceID,serviceName,serviceDes,serviceImg) {
   
     if(serviceName.length==0){
-		$('#toastrFa').removeClass('d-none').toast('show').html("Service Name is Empty !");
+		$('#toastrFa').removeClass('d-none').toast('show').html("Service Name is Empty !").appendTo('#toastrFa');
   
     }
     else if(serviceDes.length==0){
-     $('#toastrFa').removeClass('d-none').toast('show').html("Service Description is Empty !");
+     $('#toastrFa').removeClass('d-none').toast('show').html("Service Description is Empty !").appendTo('#toastrFa');
     }
     else if(serviceImg.length==0){
-    $('#toastrFa').removeClass('d-none').toast('show').html("Service Image is Empty !");
+    $('#toastrFa').removeClass('d-none').toast('show').html("Service Image is Empty !").appendTo('#toastrFa');
     }
     else{
     $('#serviceEditConfirmBtn').html("<div class='spinner-border spinner-border-sm' role='status'></div>") //Animation....
@@ -337,24 +332,24 @@ function ServiceUpdate(serviceID,serviceName,serviceDes,serviceImg) {
 
               if (response.data == 1) {
                 $('#editModal').modal('hide');
-                $('#toastrS').removeClass('d-none').toast('show').html("Update Success");
+                $('#toastrS').removeClass('d-none').toast('show').html("Update Success").appendTo('#toastrS');
                 getServicesData();
             } else {
                 $('#editModal').modal('hide');
-                $('#toastrFa').removeClass('d-none').toast('show').html("Update Fail");
+                $('#toastrFa').removeClass('d-none').toast('show').html("Update Fail").appendTo('#toastrFa');
                 getServicesData();
             }  
          } 
          else{
             $('#editModal').modal('hide');
-             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !");
+             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !").appendTo('#toastrFa');
          }   
 
         
     })
     .catch(function(error) {
         $('#editModal').modal('hide');
-        $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !");
+        $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !").appendTo('#toastrFa');
    });
 
 }
@@ -384,13 +379,13 @@ $('#serviceAddConfirmBtn').click(function() {
 function ServiceAdd(serviceName,serviceDes,serviceImg) {
   
     if(serviceName.length==0){
-     $('#toastrFa').removeClass('d-none').toast('show').html("Service Name is Empty !");
+     $('#toastrFa').removeClass('d-none').toast('show').html("Service Name is Empty !").appendTo('#toastrFa');
     }
     else if(serviceDes.length==0){
-     $('#toastrFa').removeClass('d-none').toast('show').html("Service Description is Empty !");
+     $('#toastrFa').removeClass('d-none').toast('show').html("Service Description is Empty !").appendTo('#toastrFa');
     }
     else if(serviceImg.length==0){
-      $('#toastrFa').removeClass('d-none').toast('show').html("Service Image is Empty !");
+      $('#toastrFa').removeClass('d-none').toast('show').html("Service Image is Empty !").appendTo('#toastrFa');
     }
     else{
     $('#serviceAddConfirmBtn').html("<div class='spinner-border spinner-border-sm' role='status'></div>") //Animation....
@@ -406,23 +401,23 @@ function ServiceAdd(serviceName,serviceDes,serviceImg) {
 
               if (response.data == 1) {
                 $('#addModal').modal('hide');
-                $('#toastrFa').removeClass('d-none').toast('show').html("Add Success");
+                $('#toastrS').removeClass('d-none').toast('show').html("Add Success").appendTo('#toastrS');
                 getServicesData();
             } else {
                 $('#addModal').modal('hide');
-                $('#toastrFa').removeClass('d-none').toast('show').html("Add Fail");
+                $('#toastrFa').removeClass('d-none').toast('show').html("Add Fail").appendTo('#toastrFa');
                 getServicesData();
             }  
          } 
          else{
              $('#addModal').modal('hide');
-             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !");
+             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !").appendTo('#toastrFa');
          }   
 
     })
     .catch(function(error) {
              $('#addModal').modal('hide');
-             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !");
+             $('#toastrFa').removeClass('d-none').toast('show').html("Something Went Wrong !").appendTo('#toastrFa');
    });
 
 }

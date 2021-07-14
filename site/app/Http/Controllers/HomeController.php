@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\VisitorModel;
 use App\Models\ServicesModel;
+use App\Models\CourseModel;
+use App\Models\ProjectsModel;
+use App\Models\ContactModel;
+use App\Models\ReviewModel;
 
 
 class HomeController extends Controller

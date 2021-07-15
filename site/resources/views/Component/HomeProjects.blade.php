@@ -23,6 +23,6 @@
     <div class="d-inline ml-2">
         <i id="customPrevBtn" class="btn normal-btn"><</i>
         <i id="customNextBtn" class="btn normal-btn">></i>
-        <button class="normal-btn  btn">সব গুলো </button>
+        <button class="normal-btn  btn"><a class="course-btn text-white" href="{{url('/Projects')}}">সব গুলো </a></button>
     </div>
 </div>
